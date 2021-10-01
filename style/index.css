@@ -1,1 +1,223 @@
-/* Add CSS styling here */
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* make sure they include box-sizing: border-box */
+* {
+  box-sizing: border-box;
+}
+
+/* use flexbox space-between to get these items at opposite sides of the page */
+header {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2%;
+}
+
+h2 {
+  font-size: 2.2rem;
+  padding-bottom: 1%;
+  text-align: center;
+}
+
+#feature p {
+  text-align: center;
+  padding-bottom: 1%;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#feature img {
+  width: 100%;
+  height: 50vh;
+}
+
+/* whatever is containing their nav needs to use flexbox */
+nav ul {
+  display: flex;
+}
+
+/* if their nav boxes are hanging off the page, they need to use display: inline-block */
+nav ul li a {
+  border: 1px solid black;
+  color: black;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  min-width: 15%;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* display flex, making sure flex wrap is on*/
+#projects {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+/* if they want them to wrap make sure the projects have an assigned width */
+.project {
+  width: 18%;
+  margin: 15px 20px;
+  height: 60vh;
+  border: 1px solid black;
+  display: flex;
+}
+
+.project img {
+  width: 100%;
+  height: 100%;
+}
+
+.project-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 18%;
+  line-height: 1.5rem;
+}
+
+/* justify-content/align-items center coming in handy again here with the button centering */
+footer {
+  height: 100px;
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  height: 40px;
+  width: 150px;
+}
+
+button a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: black;
+}
